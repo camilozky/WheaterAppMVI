@@ -1,6 +1,6 @@
 package com.example.weatherappmvi.data.location
 
-import android.Manifest
+import android.Manifest.permission
 import android.app.Application
 import android.content.Context
 import android.content.pm.PackageManager
@@ -23,11 +23,11 @@ class DefaultLocationTracker @Inject constructor(
     override suspend fun getCurrentLocation(): Location? {
         val hasAccessFineLocationPermission = ContextCompat.checkSelfPermission(
             application,
-            Manifest.permission.ACCESS_FINE_LOCATION
+            permission.ACCESS_FINE_LOCATION
         ) == PackageManager.PERMISSION_GRANTED
         val hasAccessCoarseLocationPermission = ContextCompat.checkSelfPermission(
             application,
-            Manifest.permission.ACCESS_COARSE_LOCATION
+            permission.ACCESS_COARSE_LOCATION
         ) == PackageManager.PERMISSION_GRANTED
 
         val locationManager =

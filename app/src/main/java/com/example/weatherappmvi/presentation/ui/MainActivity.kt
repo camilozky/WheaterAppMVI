@@ -1,4 +1,4 @@
-package com.example.weatherappmvi
+package com.example.weatherappmvi.presentation.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.weatherappmvi.ui.theme.WeatherAppMVITheme
+import com.example.weatherappmvi.presentation.ui.theme.WeatherAppMVITheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

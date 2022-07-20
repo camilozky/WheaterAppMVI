@@ -1,4 +1,4 @@
-package com.example.weatherappmvi.presentation
+package com.example.weatherappmvi.presentation.ui.viewmodel
 
 import com.example.weatherappmvi.domain.weather.WeatherInfo
 

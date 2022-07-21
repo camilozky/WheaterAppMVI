@@ -7,8 +7,10 @@ import com.example.weatherappmvi.data.remote.WeatherApi
 import com.example.weatherappmvi.domain.repository.WeatherRepository
 import com.example.weatherappmvi.domain.util.Resource
 import com.example.weatherappmvi.domain.weather.WeatherInfo
+import dagger.hilt.android.HiltAndroidApp
 import javax.inject.Inject
 
+@HiltAndroidApp
 class WeatherRepositoryImpl @Inject constructor(
     private val api: WeatherApi
 ) : WeatherRepository {
